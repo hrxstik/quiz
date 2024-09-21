@@ -6,3 +6,12 @@
   --custom-blue: #1e90ff;
   --custom-red: #ff6347;
 }
+
+@layer components {
+  .btn-primary-submit {
+    @apply bg-custom-blue text-cyan-100 m-3 p-2 px-5;
+  }
+  .btn-primary-deny {
+    @apply bg-custom-red text-red-100 m-3 p-2 px-5;
+  }
+}
