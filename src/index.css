@@ -7,11 +7,38 @@
   --custom-red: #ff6347;
 }
 
+@layer base {
+  h1 {
+    @apply text-2xl font-bold;
+  }
+}
+
 @layer components {
+  .App {
+    @apply bg-rose-700 flex justify-center items-center h-screen;
+  }
+  .button {
+    @apply m-3 p-2 px-5 rounded-full cursor-pointer;
+  }
   .btn-primary-submit {
-    @apply bg-custom-blue text-cyan-100 m-3 p-2 px-5;
+    @apply button bg-custom-blue text-cyan-100;
   }
   .btn-primary-deny {
-    @apply bg-custom-red text-red-100 m-3 p-2 px-5;
+    @apply button bg-custom-red text-red-100;
+  }
+  .question-card {
+    @apply bg-white rounded-2xl p-10 w-1000px;
+  }
+  .result-card {
+    @apply question-card flex flex-col justify-center items-center;
+  }
+  .option {
+    @apply bg-white rounded-full p-3 border-2 my-2 cursor-pointer hover:border-rose-700;
+  }
+  .progress-bar {
+    @apply bg-gray-300 w-full h-2 rounded-full mb-2;
+  }
+  .progress {
+    @apply bg-red-300 h-2 rounded-full transition-all;
   }
 }

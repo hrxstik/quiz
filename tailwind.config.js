@@ -7,6 +7,9 @@ module.exports = {
         'custom-blue': 'var(--custom-blue)',
         'custom-red': 'var(--custom-red)',
       },
+      width: {
+        '1000px': '1000px',
+      },
     },
   },
   plugins: [],
